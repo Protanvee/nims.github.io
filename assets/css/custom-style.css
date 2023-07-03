@@ -1,0 +1,248 @@
+.hero-banner .banner-content {
+    background:#e10013c7;
+}
+
+.registerForm .registerHeader {
+    background: #e10013;
+}
+
+.api-regform .submitDataButtons input[type=button] {
+    background: #e10013 !important;
+}
+
+section.la-trobe-university:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+header.header {
+    z-index: 999;
+}
+
+section.hero-banner.la-trobe-university .registerForm {
+    z-index: 11;
+}
+
+section.hero-banner.la-trobe-university .banner-content {
+    z-index: 10;
+}
+
+.feeStructure thead {
+    background: #c2970a;
+    color: #fff;
+}
+
+.scrollTop {
+    background: #e10013;
+}
+
+.accodation-area .accomodation-circle {
+    background: #ee2d20;
+    width: 220px;
+    height: 220px;
+}
+
+.accodation-area .accomodation-circle h3 {
+    font-size: 20px;
+}
+
+.accodation-area .accomodation-circle h5 {
+    font-size: 16px;
+}
+
+.otherbenfits .bgpink-all {
+    background: #e10013;
+}
+
+.registerForm .submitDataButtons input[type=submit] {
+    background: #001722;
+}
+
+.accodation-area .accomodation-circle {
+    background: #e10013;
+}
+
+.hero-banner .banner-content .bannerInner-content p {
+    font-size: 15px;
+}
+
+.hero-banner .banner-content .bannerInner-content h2 {
+    font-size: 40px;
+}
+
+.hero-banner .banner-content .bannerInner-content h2 span {
+    font-size: 30px;
+    line-height: 33px;
+}
+
+
+/*login modal */
+
+.modal.fade.modal-fullscreen.show {
+    padding-right: 0 !important;
+}
+
+.modal.modal-fullscreen .modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+
+.modal.modal-fullscreen .modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+    border: none;
+}
+
+.modal.modal-fullscreen .modal-content {
+    background: #59b36e;
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, #59b36e), color-stop(100%, #2077c8));
+    background: linear-gradient(135deg, #59b36e 0%, #2077c8 100%);
+}
+
+.modal-fullscreen .modal-header {
+    border: none;
+}
+
+.modal-fullscreen .modal-footer {
+    border: none;
+}
+
+.modal-header .close img {
+    width: 30px;
+}
+
+.loginLogo {
+    width: 100%;
+    margin-bottom: 50px;
+    max-width: 300px;
+}
+
+.userLoginFrom .form-group input[type=submit],
+.btn_custom {
+    background: #001722;
+}
+
+.showSingle {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.registerForm .submitDataButtons input[type=button] {
+    width: 154px;
+    height: 46px;
+    line-height: 46px;
+    background: #001722;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    margin-right: 15px;
+}
+
+.about-course h2 {
+    margin-bottom: 20px;
+}
+
+.feeStructure {
+    background: #ffffff;
+    text-align: left !important;
+}
+
+.main-heading h2 {
+    text-align: left;
+}
+
+.main-heading {
+    margin-bottom: 20px;
+}
+
+.feeStructure table {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.mar-b {
+    padding-bottom: 40px;
+}
+
+.feeStructure thead th {
+    color: #fff;
+    padding: 15px 30px;
+}
+
+.table thead th {
+    vertical-align: middle;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.feeStructure table td {
+    padding: 15px 30px;
+}
+
+.hero-banner .banner-content .bannerInner-content h2 span {
+    display: inline-block;
+}
+
+.hero-banner .banner-content .bannerInner-content h2 span img {
+    max-width: 60px;
+    width: 100%;
+}
+
+.benfitsall .benifits-list {
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 2px;
+}
+
+
+/*-responsive start here-*/
+
+@media only screen and (max-width: 767px) {
+    header .headLeft-logo a:nth-child(1) img {
+        width: 140px;
+    }
+    header .headLeft-logo a:nth-child(2) img {
+        width: 100px;
+    }
+    header .headRight-logo a img {
+        width: 60px;
+    }
+    .hero-banner .banner-content .bannerInner-content h2 {
+        font-size: 32px;
+    }
+    .main-heading p {
+        font-size: 14px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-banner .banner-content .bannerInner-content h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .hero-banner .banner-content .bannerInner-content h2 span img {
+        max-width: 40px;
+        width: 100%;
+        display: inline-block;
+    }
+    .hero-banner .banner-content .bannerInner-content h2 span {
+        font-size: 20px;
+    }
+}

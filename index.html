@@ -1,0 +1,660 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NIMS University Jaipur | India's No1 University Rajasthan</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="Author" content="Chandigarh University, Punjab" />
+    <meta name="robots" content="INDEX, FOLLOW" />
+    <link rel="canonical" href="index.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <link rel="shortcut icon" href="assets/uploads/fevicon.png" type="image/x-icon">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="scss/main1.5.css" />
+    <link rel="stylesheet" href="assets/css/custom-style.css" />
+    
+    <link rel="stylesheet" href="assets/font-awesome.css" />
+    
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/api-registration.js"></script>
+    <script>
+        $(document).ready(function() {
+            LoadRegistrationForm('reg-form', 'curtin');
+        });
+    </script>
+
+
+    <style>
+	.abroad-fixed-bar {
+		background:#e10013;
+		position: fixed;
+	    bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		z-index: 100;
+		padding: 10px 0;
+		display: none;
+    }
+	.abroad-fixed-bar a {
+		text-transform: uppercase;
+		font-size: 18px;
+		text-decoration: none;
+		font-weight: 700;
+		line-height: 20px;
+		color: #f7b400;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.scrollTop {
+	    z-index: 999;
+	}
+        
+.convert-btn {
+	border: 0;
+	color: #111;
+	font-size: 12px;
+	background: #231f20;
+	height: 47px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 4px;
+	line-height: 47px;
+	text-align: center;
+	padding: 0 35px;
+	display: inline-block;
+    transition: all 0.2s ease-in-out;
+}
+.convert-btn:hover {
+    background: #3a3a3a;
+    text-decoration: none;
+    color: #fff;
+}
+        
+.brochureDiv {
+	background: #e10013;
+	padding: 50px;
+	position: relative;
+    margin-top: 50px;
+}
+
+.dwnld-btn {
+	position: unset;
+	right: 50px;
+	top: 60px;
+	border-radius: 8px;
+	color: #fff;
+}  
+        
+@media (min-width: 992px) {
+    .dwnld-btn {
+        position: absolute;
+    }
+}  
+        
+@media (max-width: 767px) {
+    .brochureDiv {
+        padding: 20px 15px;
+        text-align: center;
+    }
+    .dwnld-btn {
+        margin-top: 20px;
+    }  
+}         
+	</style>
+</head>
+
+<body id="page-top">
+
+    <header>
+        <div class="container clearfix">
+            <div class="headLeft-logo float-left">
+                <a href="#"><img src="new_ass/logo1.svg" alt="cu logo" width="247"></a>
+                <!--<a href="#"><img src="uploads/naac-logo.png" alt="cu logo" width="165"></a>-->
+            </div>
+            <div class="headRight-logo float-right">
+              <!--  <a href="javascript:void(0)"><img src="uploads/curtin-logo.png" alt="oc logo" width="100"></a> -->
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-banner" style="background: url('new_ass/nims.png'); background-size: cover; background-repeat: no-repeat;" id="enquiryForm">
+        <div class="container">
+            <div class="registerForm">
+                <div class="registerHeader">
+                    <h2>Register Now</h2>
+                </div>
+                <div id="reg-form">
+					
+					<!--form entry-->
+					<div id="reg-form" style="display: block;">
+
+
+
+
+<link href="" rel="stylesheet">
+<div class="api-regform  formBody">
+    <input id="hfSource" type="hidden" value="curtin">
+    <input id="hfPreviousPageUrl" type="hidden">
+    <input id="hfRegFormType" type="hidden">
+    <div class="row">
+        <div class="col-6 col-xs-6">
+            <div class="formField">
+                <input id="txtStudentName" type="text" maxlength="95" placeholder="Enter your Name" class="input-control" data-validation="Name">
+            </div>
+        </div>
+        <div class="col-6 col-xs-6">
+            <div class="formField">
+                <input id="txtEmailID" type="text" maxlength="200" placeholder="Enter your Email Address" class="input-control" data-validation="Email Id">
+                <img id="imgLoading_Email" src="">
+                <img id="imgLoading_Email_Ok">
+            </div>
+        </div>
+        <div class="col-6 col-xs-6">
+            <div class="formField">
+                <input id="txtMobileNo" type="text" maxlength="20" placeholder="Enter Mobile No" class="input-control" data-validation="Mobile No">
+                <img id="imgLoading_Mobile" src="">
+                <img id="imgLoading_Mobile_Ok">
+            </div>
+        </div>
+        <div class="col-6 col-xs-6">
+            <div class="formField">
+                <input id="hfCity" type="hidden">
+                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input id="txtCity" type="text" maxlength="200" placeholder="Type your city &amp; select from list" class="input-control ui-autocomplete-input" data-validation="City Name" autocomplete="off">
+            </div>
+        </div>
+        <div class="col-12 col-xs-12">
+            <h6>Choose Your Interested Program</h6>
+        </div>
+        <div class="col-6 col-xs-6">
+            <div class="formField">
+                <select id="ddlProgramInterested" class="input-control" data-validation="Discipline"><option value="Select Discipline">Select Discipline</option><option value="Animation &amp; Film Production &amp; Visual Arts">Animation &amp; Film Production &amp; Visual Arts</option><option value="Applied Health Sciences">Applied Health Sciences</option><option value="Architecture Design and Planning">Architecture Design and Planning</option><option value="Arts">Arts</option><option value="B.P.Ed">B.P.Ed</option><option value="Biotechnology">Biotechnology</option><option value="Business Management">Business Management</option><option value="Commerce">Commerce</option><option value="Computing">Computing</option><option value="Design">Design</option><option value="Education">Education</option><option value="Engineering">Engineering</option><option value="Global School of Finance and Accounting">Global School of Finance and Accounting</option><option value="Hotel Management">Hotel Management</option><option value="Industry Sponsored Program">Industry Sponsored Program</option><option value="Journalism and Mass Communication">Journalism and Mass Communication</option><option value="Legal Studies">Legal Studies</option><option value="Masters of Engineering">Masters of Engineering</option><option value="MBA Fintech">MBA Fintech</option><option value="ME Virtusa">ME Virtusa</option><option value="Pharma Sciences">Pharma Sciences</option><option value="Sciences">Sciences</option><option value="Study Abroad Programs">Study Abroad Programs</option></select>
+            </div>
+        </div>
+        <div class="col-6 col-xs-6">
+            <div class="formField">
+                <select id="ddlProgram" class="input-control" data-validation="Program">
+                    <option value="0">Select Program</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-12 col-xs-12">
+            <h6>How old are you?</h6>
+        </div>
+        <div class="col-12 col-xs-12">
+            <div class="dobDiv clearfix">
+                <div class="formField">
+                    <select id="ddlDay" class="input-control" data-validation="Day">
+                        <option value="0">DD</option>
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06">6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                </div>
+                <div class="formField">
+                    <select id="ddlMnt" class="input-control" data-validation="Month">
+                        <option value="0">MM</option>
+                        <option value="01">JANUARY</option>
+                        <option value="02">FEBRUARY</option>
+                        <option value="03">MARCH</option>
+                        <option value="04">APRIL</option>
+                        <option value="05">MAY</option>
+                        <option value="06">JUNE</option>
+                        <option value="07">JULY</option>
+                        <option value="08">AUGUST</option>
+                        <option value="09">SEPTEMBER</option>
+                        <option value="10">OCTOBER</option>
+                        <option value="11">NOVEMBER</option>
+                        <option value="12">DECEMBER</option>
+                    </select>
+                </div>
+                <div class="formField">
+                    <select id="ddlyear" class="input-control" data-validation="Year">
+                        <option value="0">YYYY</option>
+                        <option value="1980">1980</option>
+                        <option value="1981">1981</option>
+                        <option value="1982">1982</option>
+                        <option value="1983">1983</option>
+                        <option value="1984">1984</option>
+                        <option value="1985">1985</option>
+                        <option value="1986">1986</option>
+                        <option value="1987">1987</option>
+                        <option value="1988">1988</option>
+                        <option value="1989">1989</option>
+                        <option value="1990">1990</option>
+                        <option value="1991">1991</option>
+                        <option value="1992">1992</option>
+                        <option value="1993">1993</option>
+                        <option value="1994">1994</option>
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-xs-12">
+            <div class="submitDataButtons">
+                <input id="btnRegisterNow" type="button" value="Register Now" class="btn_custom">
+            </div>
+        </div>
+        <div class="col-6 col-xs-12">
+            <div class="submitDataButtons">
+                <input id="btnAlreadyRegistered" type="button" value="Already Registered" class="btn_custom api-login-btn">
+            </div>
+        </div>
+        <div class="col-12 col-xs-12">
+            <p id="p_Error"></p>
+        </div>
+    </div>
+
+</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="banner-content">
+            <div class="container">
+                <div class="bannerInner-content">
+                    <h2><span style="display: block;">Your Gateway to a Global Career!</span>Await your in Destination with NIMS University
+                        <span> <!--<img src="uploads/austrilia-flag.png">--></span></h2>
+                    <p>Ius summo salutandi voluptatibus ea. Sea vide affert verear ne, qui timeam admodum ut, et omnium temporibus persequeris eos. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="serThumbnails-sec p-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="serThumb">
+                       <img src="uploads/icon-1.png" alt="icon-1"> 
+                        <p>Vix vidit tibique, per deleniti cotidieque. </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="serThumb">
+                        <img src="uploads/icon-2.png" alt="icon-1">
+                        <p>labore consequat deterruisset te vis. </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="serThumb">
+                        <img src="uploads/icon-3.png" alt="icon-1">
+                        <p>Nam agam duis recusabo no. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="courseAll p-70">
+        <div class="container">
+            <div class="main-heading text-center mar-b">
+                <h2 class="text-center">Vix vidit tibique, <b>per deleniti cotidieque.</b></h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-6">
+                    <div class="courseThumb">
+                        <img src="uploads/sub-1.jpg" alt="subject">
+                        <span style="background: #231f20;"><h4>Bachelor of Commerce (B.Com)</h4></span>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="about-course">
+                        <div class="main-heading text-center">
+                            <h2>About <b>Courses</b></h2>
+                        </div>
+                        <p>Te nonumy mentitum suscipiantur has, verterem gloriatur rationibus at vis. Has te sanctus legendos consetetur, magna paulo vivendum vel ea, vel ea forensibus repudiandae. Nam quis magna hendrerit ad. Cibo oporteat eu eum, meis regione oporteat et eum, accusam pertinax vis an. Ne wisi scaevola accusamus vix, suas mandamus consulatu ius ei, te malis urbanitas mel. Pro simul iriure te, in ius dolorum dissentias, eam quot vocent inciderint no. No diceret sanctus nostrum eum, nulla graeci putant ex mel, sea stet pertinax argumentum et.
+</p>
+                    </div>
+                    <br>
+                    <div class="feeStructure">
+                        <div class="container-box">
+                            <div class="main-heading text-center">
+                                <h2>Fee <b>Structure</b></h2>
+                            </div>
+
+                            <div class="table-wrap">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>COURSE</th>
+                                            <th>START</th>
+                                            <th>LENGTH</th>
+                                            <th>TUITION COST (annual)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="COURSE">Bachelor of Commerce<br> (B.Com)</td>
+                                            <td data-title="START">July</td>
+                                            <td data-title="LENGTH">2 Years</td>
+                                            <td data-title="TUITION COST">
+                                                <div class="fee">
+                                                 
+                                                    <p>
+                                                        <b>Total Tuition:</b><br>  16,50,000 INR<!--<br> Rs. 16,50,000 INR-->
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="brochureDiv">
+                    <h3 class="text-white mb-1">Cui dolorem ipsum</h3>
+                    <p class="text-white my-0">Qui dolorem ipsum, quia dolor sit amet consectetur adipisci velit</p>
+                    <!--<a href="https://www.xe.com/currencyconverter/" target="_blank" class="convert-btn dwnld-btn"><i class="fa fa-exchange" style="font-size: 14px;"></i>&nbsp;&nbsp; Convert</a> -->
+                </div>
+            </div>
+        </div>	                    
+
+                </div>
+      
+            </div>
+        </div>
+    </section>
+	
+	
+<section class="goBack-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-10">
+					<h3>Quia dolor sit amet</h3>
+				</div>
+				<div class="col-xl-2 text-right">
+					<a href="https://www.nimsuniversity.org/" target="_blank" class="cta-btn">Click here</a>
+				</div>
+			</div>
+		</div>
+</section>
+
+    <section class="benfitsall p-70" style="background: url('uploads/study-bg.jpg'); background-size: cover; background-repeat: no-repeat;">
+        <div class="container">
+            <div class="benifits-list">
+                <div class="main-heading">
+                    <h2>As a <b>beneficiary student, </b> avail the following benefits:</h2>
+                </div>
+                <ul class="checkList">
+                    <li>qui dolorem ipsum, quia dolor sit amet consectetur adipisci velit</li>
+                    <li>ed quia non numquam eius modi tempora incidunt</li>
+                    <li>ut labore et dolore magnam aliquam quaerat voluptatem</li>
+                    <li>ed quia non numquam eius modi tempora incidunt</li>
+                    <li>quia dolor sit amet consectetur adipisci velit</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="otherbenfits p-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="otherBen-all">
+                        <div class="main-heading">
+                            <h2>Pre-requisites for <br><b>articulation program</b></h2>
+                        </div>
+                        <ul class="checkList">
+                            <li>Nor again is there anyone who loves or pursues</li>
+                            <li>Lorem ipsum dolor sit amet </li>
+                            <li>ea ius dolores probatus recteque, ad nam amet enim nonumes.</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="bgpink-all">
+                        <div class="main-heading">
+                            <h2>Pre-requisites for <br><b>Post – Baccalaureate Diploma</b></h2>
+                        </div>
+                        <ul class="checkList">
+                            <li>Eum saepe dolorum persecuti eu </li>
+                            <li>ea ius dolores probatus recteque, ad nam amet enim nonumes.
+</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="accomodataion p-70">
+        <div class="container">
+            <div class="main-heading text-center">
+                <h2 class="text-center">Eum saepe dolorum  <b>persecuti eu</b></h2>
+                <p>e nonumy mentitum suscipiantur has, verterem gloriatur rationibus at vis. Has te sanctus legendos consetetur, magna paulo vivendum vel ea, vel ea forensibus repudiandae. Nam quis magna hendrerit ad. </p>
+            </div>
+            <div class="accodation-area">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="accomodation-circle d-flex align-items-center">
+                            <div class="w-100">
+                                <h5>Homestay</h5>
+                                <h3>$235-$325 AUD</h3>
+                                <p>per week</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="accomodation-circle d-flex align-items-center">
+                            <div class="w-100">
+                                <h5>Private Rentals</h5>
+                                <h3>$90 - $160 AUD</h3>
+                                <p>per week</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="accomodation-circle d-flex align-items-center">
+                            <div class="w-100">
+                                <h5>Shared Rental</h5>
+                                <h3>$180- $390 AUD</h3>
+                                <p>per week</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<section class="goBack-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-10">
+					<h3>Cibo oporteat eu eum, meis regione oporteat et eum, accusam pertinax vis an.? </h3>
+				</div>
+				<div class="col-xl-2 text-right">
+					<a href="https://www.nimsuniversity.org/" class="cta-btn">Click here</a>
+				</div>
+			</div>
+		</div>
+		<style>
+		
+			.goBack-section{
+				background: #e10013;
+				padding: 30px 0
+			}
+			.goBack-section h3{
+				color: #fff;
+				font-size: 34px;
+			}
+			.cta-btn{
+				background: #fff;
+				font-size: 16px;
+				padding: 12px 40px;
+				border-radius: 6px;
+				display: inline-block;
+				text-decoration: none !important;
+				color: #111;
+				font-weight: 600;
+				text-align: center
+			}
+			
+			@media only screen and (max-width: 1199px){
+				.goBack-section{
+					text-align: center
+				}
+				.goBack-section .col-xl-2{
+					text-align: center !important;
+					margin-top: 20px
+				}
+				.goBack-section h3{
+					font-size: 24px;
+				}
+			}
+		</style>
+	</section>
+
+    <footer class="text-center">
+        <p>All Rights Reserved</p>
+    </footer>
+
+    <div id="stop" class="scrollTop">
+        <img src="uploads/top-arrow.png" alt="top arrow">
+    </div>
+
+    <div class="abroad-fixed-bar">
+        <a href="https://www.nimsuniversity.org/">Apply Online</a> 
+    </div>
+
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+    <script>
+        $(function() {
+            $(".table-wrap").each(function() {
+                var nmtTable = $(this);
+                var nmtHeadRow = nmtTable.find("thead tr");
+                nmtTable.find("tbody tr").each(function() {
+                    var curRow = $(this);
+                    for (var i = 0; i < curRow.find("td").length; i++) {
+                        var rowSelector = "td:eq(" + i + ")";
+                        var headSelector = "th:eq(" + i + ")";
+                        curRow.find(rowSelector).attr('data-title', nmtHeadRow.find(headSelector).text());
+                    }
+                });
+            });
+        });
+
+        $(document).ready(function(){
+			  $("a[href='#enquiryForm']").on('click', function(event) {
+			  if (this.hash !== "") {
+				event.preventDefault();
+				var hash = this.hash;
+				$('html, body').animate({
+				  scrollTop: $(hash).offset().top 
+				}, 900, function(){
+				  window.location.hash = hash;
+				  });
+				}
+			  });
+			})
+
+        $(document).ready(function() {
+            var scrollTop = $(".scrollTop");
+            $(window).scroll(function() {
+                var topPos = $(this).scrollTop();
+                if (topPos > 100) {
+                    $(scrollTop).css("opacity", "1");
+                } else {
+                    $(scrollTop).css("opacity", "0");
+                }
+            });
+
+
+            $(scrollTop).click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 1200);
+                return false;
+            });
+
+
+        }); // ready() END
+
+
+
+        $('.toggleMenu').on('click', function() {
+            $('.homeNav').slideToggle('')
+        });
+		
+		$(window).scroll(function () {
+		if ($(window).scrollTop() >= 300) {
+			$('.abroad-fixed-bar').slideDown(500);
+		}
+		else {
+			$('.abroad-fixed-bar').slideUp(500);
+		}
+	});
+    </script>
+
+
+
+</body>
+
+
+</html>
